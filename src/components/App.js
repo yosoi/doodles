@@ -5,8 +5,10 @@ import Gallery from './Gallery.js'
 import Heading from './Heading.js'
 import React from 'react';
 import Row from 'react-bootstrap/Row'
+import UploadModal from './UploadModal.js'
 
 function App() {
+  const [modalShow, setModalShow] = React.useState(false);
   return (
     <div>
       <Container>
@@ -21,7 +23,14 @@ function App() {
           </Col>
         </Row>
       </Container>
-      <ButtonContainer />
+      <ButtonContainer
+        onCamera={() => console.log("say cheese")}
+        onUpload={() => setModalShow(true)}
+      />
+      <UploadModal
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      />
     </div>
   );
 }

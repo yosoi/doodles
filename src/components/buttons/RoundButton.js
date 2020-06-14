@@ -4,6 +4,7 @@ import React from 'react';
 function App(props) {
   return (
     <Button
+      onClick={props.onClick}
       size="lg"
       variant="outline-primary"
     >

@@ -2,9 +2,12 @@ import React from 'react';
 import CameraIcon from '../icons/CameraIcon.js'
 import RoundButton from './RoundButton.js'
 
-function CameraButton() {
+function CameraButton(props) {
   return (
-    <RoundButton icon={<CameraIcon />}/>
+    <RoundButton
+      {...props}
+      icon={<CameraIcon />}
+    />
   );
 }
 

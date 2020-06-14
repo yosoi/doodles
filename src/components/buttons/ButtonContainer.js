@@ -5,7 +5,7 @@ import React from 'react';
 import Row from 'react-bootstrap/Row'
 import UploadButton from './UploadButton.js'
 
-function ButtonContainer() {
+function ButtonContainer(props) {
   return (
     <Container
       className="text-center"
@@ -18,12 +18,12 @@ function ButtonContainer() {
     >
       <Row className="mb-3">
         <Col>
-          <CameraButton />
+          <CameraButton onClick={props.onCamera}/>
         </Col>
       </Row>
       <Row className="mb-3">
         <Col>
-          <UploadButton />
+          <UploadButton onClick={props.onUpload}/>
         </Col>
       </Row>
     </Container>

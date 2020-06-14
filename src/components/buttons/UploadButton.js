@@ -2,9 +2,12 @@ import React from 'react';
 import UploadIcon from '../icons/UploadIcon.js'
 import RoundButton from './RoundButton.js'
 
-function UploadButton() {
+function UploadButton(props) {
   return (
-    <RoundButton icon={<UploadIcon />}/>
+    <RoundButton
+      {...props}
+      icon={<UploadIcon />}
+    />
   );
 }
 
