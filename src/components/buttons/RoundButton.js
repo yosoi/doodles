@@ -1,9 +1,13 @@
-import React from 'react';
 import Button from 'react-bootstrap/Button'
+import React from 'react';
 
 function App(props) {
   return (
-    <Button>
+    <Button
+      className="rounded-circle"
+      size="lg"
+      variant="outline-primary"
+    >
       {props.icon}
     </Button>
   );
