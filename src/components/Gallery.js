@@ -1,11 +1,11 @@
 import React from 'react';
 
-function App() {
+function Gallery() {
   return (
-    <div className="App">
+    <div>
       
     </div>
   );
 }
 
-export default App;
+export default Gallery;
